@@ -26,3 +26,27 @@ void print_triangle(int leftCol, int size)
   }
 }
 
+void print_arrow()
+{
+  for (int i = 0; i < 5; i++){
+    unsigned short row = font_5x7[97][i];
+    for(int j = 0; j < 8; j++){
+      unsigned short col = 1 << (7 - j);
+      putchar((row & col)? '*' : ' ');
+    }
+    putchar('\n');
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
